@@ -6,9 +6,7 @@ namespace Labs
     {
         public static void LabDM2()
         {
-            Console.WriteLine("Hello! \nWrote number lab...");
-            //labDM1.LabDM1();
-            //labDM2.LabDM2();
+            Console.WriteLine("Lab 2");
         }
     }
 } 
