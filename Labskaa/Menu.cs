@@ -20,7 +20,7 @@ namespace Labs
                         labDM2.LabDM2();
                         break;
                     default:
-                        Console.WriteLine("Введен не верный номер Lab \n Перезапустите программу");
+                        Console.WriteLine("Введен не верный номер Lab \nПерезапустите программу");
                         break;
                 }
             } while (x == "1" | x == "2");
