@@ -24,9 +24,6 @@ namespace Labs
                         break;
                 }
             } while (x == "DM1" | x == "DM2");
-            
-            
-            
         }
     }
 } 
