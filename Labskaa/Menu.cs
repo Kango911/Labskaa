@@ -8,13 +8,14 @@ namespace Labs
         {
             string x;
             Console.WriteLine("Hello! \nWrote number lab... \nDM1 or DM2");
+            Book book = new();
             do
             {
                 x = Console.ReadLine();
                 switch (x)
                 {
                     case "DM1":
-                        labDM1.LabDM1();
+                        Console.WriteLine(book.Author);
                         break;
                     case "DM2":
                         labDM2.LabDM2();
