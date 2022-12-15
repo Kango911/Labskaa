@@ -4,6 +4,7 @@ namespace Labs
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Magenta;
             string pathOfProject = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
 
             string csvReadersPath = pathOfProject + "//Data//Readers.csv";
