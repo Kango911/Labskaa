@@ -7,15 +7,15 @@ namespace Labs
         public static void LabDM1()
         {
             Console.WriteLine("Вы выбрали LabDM 1");
-            class Libery()
-            {
-                class Book
-                {
-                    // Name
-                    // Avtor
-                    // Year
-                }
-            }
+            
         }
+    }
+    class Libery
+    {
+        public Book[] F { get; }
+    }
+    class Book
+    {
+                
     }
 }
