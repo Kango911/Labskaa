@@ -6,7 +6,7 @@ namespace Labs
     {
         public static void LabDM2()
         {
-            Console.WriteLine("Вы выбрали LabDM 2");
+            Console.WriteLine("Вы выбрали LabDM 2 \nВ разработке...");
         }
     }
 } 
