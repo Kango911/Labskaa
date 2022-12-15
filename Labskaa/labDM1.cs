@@ -16,6 +16,6 @@ namespace Labs
     }
     class Book
     {
-                
+        
     }
 }
