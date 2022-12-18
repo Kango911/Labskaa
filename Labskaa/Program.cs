@@ -54,6 +54,7 @@ namespace Labs
             }
 
             DataDisplay.Display(readersBooks.ToArray());
+            Console.ReadKey();
         }
     }
 }
