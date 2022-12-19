@@ -43,7 +43,7 @@ namespace Labs.WorkWithSchema;
                     }
                 }
             }
-            return true && IsColumnsValid(lines[0], schema);
+            return IsColumnsValid(lines[0], schema);
         }
 
         public static Schema GetSchema(string path)
@@ -56,7 +56,7 @@ namespace Labs.WorkWithSchema;
             string[] columnsElements = columns.Split(";");
             for (int i = 0; i < columnsElements.Length; i++)
             {
-                if (!(columnsElements[i] == schema.Elements[i].Name))
+                if (columnsElements[i] != schema.Elements[i].Name)
                 {
                     DisplayErrorMessage(0, 0, columnsElements);
                     return false;
