@@ -36,9 +36,7 @@ namespace Labs
                 books.Add(new Book(int.Parse(elements[0]), elements[1], elements[2], int.Parse(elements[3]),
                                     int.Parse(elements[4]), int.Parse(elements[5]), bool.Parse(elements[6])));
             }
-            //Создаем тестовые ReadersBook на основе уже поступивших Book и Reader. Потом это уже можно будет записать в табличку.
             List<ReadersBook> readersBooks = new List<ReadersBook>();
-            //Для заполнение книг у которых нет читателя. Да, костыль :(
             Reader emptyReader = new Reader(0, "");
             int countTestReadersBook = 5;
 
