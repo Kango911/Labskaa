@@ -13,8 +13,8 @@ namespace Labskaa
             string csvBooksPath = pathOfProject + "//Data//Books.csv";
             string bookSchemaPath = pathOfProject + "//Schemas//book.schema.json";
 
-            string[] readersData = CsvDataParser.GetDataFromCsv(csvReadersPath, readerSchemaPath);
-            string[] booksData = CsvDataParser.GetDataFromCsv(csvBooksPath, bookSchemaPath);
+            string[] readersData = DataWriter.GetDataFromCsv(csvReadersPath, readerSchemaPath);
+            string[] booksData = DataWriter.GetDataFromCsv(csvBooksPath, bookSchemaPath);
 
             List<Reader> readers = new List<Reader>();
             List<Book> books = new List<Book>();

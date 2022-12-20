@@ -2,7 +2,7 @@ using Labskaa.WorkWithSchema;
 
 namespace Labskaa
 {
-    class CsvDataParser
+    class DataWriter
     {
         public static void AppendDataToCsv(string path, string data)
         {
