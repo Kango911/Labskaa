@@ -68,7 +68,7 @@ namespace Labs.WorkWithSchema;
         private static void DisplayErrorMessage(int row, int column, string[] line)
         {
             string errorAccured = $"Error accured! In row {row} and column {column} wrong Type!\n" + 
-            $"In line: {raw} element: {line[column]}";
+            $"In line: {row} element: {line[column]}";
 
             throw new FormatException(String.Concat(errorAccured));
         }
