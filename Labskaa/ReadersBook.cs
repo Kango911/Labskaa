@@ -2,13 +2,13 @@ namespace Labs
 {
     class ReadersBook
     {
-        public DateTime DateOfGetting { get; private set; }
-        public DateTime DateOfReturning { get; set; }
+        public DateTime DateGetting { get; private set; }
+        public DateTime DateReturning { get; set; }
         public Tuple<Book, Reader> BookReadersData { get; private set; }
 
         public ReadersBook(DateTime getting, Book book, Reader reader)
         {
-            DateOfGetting = getting;
+            DateGetting = getting;
             BookReadersData = new Tuple<Book, Reader>(book, reader);
         }
     }

@@ -7,7 +7,7 @@ namespace Labs
             int maxNameLength = readersBook.Max(x => x.BookReadersData.Item1.Name.Length);
             int maxAuthorLength = readersBook.Max(x => x.BookReadersData.Item1.Author.Length);
             int maxReaderFullname = readersBook.Max(x => x.BookReadersData.Item2.Name.Length);
-            int maxDateOfGetting = readersBook.Max(x => x.DateOfGetting.ToString().Length);
+            int maxDateOfGetting = readersBook.Max(x => x.DateGetting.ToString().Length);
 
 
             CreateTableRow("Book".PadRight(maxNameLength), "Author".PadRight(maxAuthorLength),
@@ -20,7 +20,7 @@ namespace Labs
                 string bookName = data.BookReadersData.Item1.Name.PadRight(maxNameLength);
                 string author = data.BookReadersData.Item1.Author.PadRight(maxAuthorLength);
                 string gettingDate = data.BookReadersData.Item2.Name != "" 
-                    ? data.DateOfGetting.ToString().PadRight(maxDateOfGetting)
+                    ? data.DateGetting.ToString().PadRight(maxDateOfGetting)
                     : "".PadRight(maxDateOfGetting);
                 string readerName = data.BookReadersData.Item2.Name.PadRight(maxReaderFullname);
                 CreateTableRow(bookName, author, readerName, gettingDate);
