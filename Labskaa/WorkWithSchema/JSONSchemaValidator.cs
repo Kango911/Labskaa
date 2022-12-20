@@ -65,11 +65,11 @@ namespace Labs.WorkWithSchema;
             return true;
         }
 
-        private static void DisplayErrorMessage(int raw, int column, string[] line)
+        private static void DisplayErrorMessage(int row, int column, string[] line)
         {
-            string errorAccured = $"Error accured! In raw {raw} and column {column} wrong Type!\n";
-            string correctionInfo = $"In line: {raw} element: {line[column]}";
+            string errorAccured = $"Error accured! In row {row} and column {column} wrong Type!\n" + 
+            $"In line: {raw} element: {line[column]}";
 
-            throw new FormatException(String.Concat(errorAccured, correctionInfo));
+            throw new FormatException(String.Concat(errorAccured));
         }
     }

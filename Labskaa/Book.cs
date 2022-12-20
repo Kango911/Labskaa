@@ -22,10 +22,5 @@ namespace Labs
             Shelf = shelf;
             IsAvailable = available;
         }
-
-        public Book()
-        {
-            
-        }
     }
 }
