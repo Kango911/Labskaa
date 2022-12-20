@@ -1,6 +1,6 @@
-using Labs.WorkWithSchema;
+using Labskaa.WorkWithSchema;
 
-namespace Labs
+namespace Labskaa
 {
     class CsvDataParser
     {

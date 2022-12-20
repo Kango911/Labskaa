@@ -1,4 +1,4 @@
-namespace Labs
+namespace Labskaa
 {
     internal class Program
     {

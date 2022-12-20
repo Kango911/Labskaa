@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Labs
+namespace Labskaa
 {
     class Book
     {

@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace Labs.WorkWithSchema
+namespace Labskaa.WorkWithSchema
 {
     class Schema
     {

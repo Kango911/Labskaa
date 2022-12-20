@@ -1,4 +1,4 @@
-namespace Labs
+namespace Labskaa
 {
     class ReadersBook
     {
