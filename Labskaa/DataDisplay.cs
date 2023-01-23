@@ -33,8 +33,8 @@ namespace Labskaa
             string s1 = $"|{bookName}|{author}|{readerName}|{dateOfGetting}|";
             string[] values = new string[] { s1 };
  
-            string s2 = string.Join(" ", values);
-            Console.WriteLine(s2);
+            //string s2 = string.Join(" ", values);
+            Console.WriteLine(s1);
         }
 
         private static void CreateHeadersSeparator(int maxNameLength, int maxAuthorLength, int maxReaderName, int maxDate)
