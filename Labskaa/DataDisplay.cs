@@ -29,7 +29,15 @@ namespace Labskaa
 
         private static void CreateTableRow(string bookName, string author, string readerName, string dateOfGetting)
         {
-            Console.WriteLine($"|{author}|{bookName}|{readerName}|{dateOfGetting}|");
+            //Console.WriteLine($"|{author}|{author}|{readerName}|{dateOfGetting}|");
+            string s5 = $"|{author}|";
+            string s6 = $"{author}|";
+            string s7 = $"{readerName}|";
+            string s8 = $"{dateOfGetting}|";
+            string[] values = new string[] { s5, s6, s7, s8, };
+ 
+            string s9 = string.Join(" ", values);
+            Console.WriteLine(s9);
         }
 
         private static void CreateHeadersSeparator(int maxNameLength, int maxAuthorLength, int maxReaderName, int maxDate)
